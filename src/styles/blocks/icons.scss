@@ -1,0 +1,23 @@
+.icon {
+  width: 24px;
+  height: 24px;
+  display: block;
+  &--menu {
+    background-image: url(../images/logo/icon-menu.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  &--array {
+    background-image: url(../images/logo/icon--array-whit.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  &--close {
+    background-image: url(../images/logo/icon-close.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+}

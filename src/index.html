@@ -1,3 +1,4 @@
+<!-- #region head -->
 <!doctype html>
 <html lang="en">
   <head>
@@ -6,14 +7,78 @@
       name="viewport"
       content="width=device-width, initial-scale=1.0"
     />
-    <title>Title</title>
+    <title>Museum</title>
     <link
       rel="stylesheet"
       href="./styles/main.scss"
     />
+    <link
+      href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
   </head>
+  <!-- #endregion -->
   <body>
-    <h1>Hello Mate Academy</h1>
+    <header class="header">
+      <div class="top-bar header__top">
+        <a
+          href="#menu"
+          class="icon icon--menu"
+        ></a>
+        <a
+          href="#"
+          class="top-bar__logo"
+        ></a>
+      </div>
+      <div class="header__content">
+        <h1 class="header__title">художній музей</h1>
+
+        <button class="header__button">
+          Квитки
+          <div class="header__inner-button">
+            <a
+              href="#"
+              class="icon icon--array"
+            ></a>
+          </div>
+        </button>
+      </div>
+    </header>
+    <aside
+      class="menu"
+      id="menu"
+    >
+      <div class="menu__top">
+        <a
+          href="#"
+          class="icon icon--close"
+        ></a>
+        <div class="list">
+          <div class="list__items">
+            <div class="list__item">Галерея</div>
+            <div class="list__item">Виставки та події</div>
+          </div>
+          <div class="list__items">
+            <div class="list__item">Про Нас</div>
+            <div class="list__item">Контакти</div>
+          </div>
+        </div>
+      </div>
+      <div class="menu__main">
+        <div class="menu__title"></div>
+        <ul class="menu__list-schedule"></ul>
+      </div>
+    </aside>
+    <main class="main">
+      <section class="current-events">
+        <h2>Актуальні події</h2>
+      </section>
+      <section class="gallery">
+        <h2>Галерея</h2>
+      </section>
+      <section class="subscription"></section>
+    </main>
+    <footer class="footer"></footer>
     <script src="scripts/main.js"></script>
   </body>
 </html>
