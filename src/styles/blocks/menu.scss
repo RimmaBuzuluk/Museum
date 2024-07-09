@@ -8,11 +8,61 @@
   background-color: $green-color;
   opacity: 0;
   pointer-events: none;
+  color: $whigt-color;
+  font-weight: 500;
+  padding: 27px 24px 0;
+  @include constent-padding-inline;
+
   &__top {
-    padding: 27px 24px 0;
+    display: flex;
+    justify-content: space-between;
   }
   &:target {
     opacity: 1;
     pointer-events: all;
+  }
+  &__title {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    margin-top: 24px;
+    margin-bottom: 20px;
+  }
+  &__list-schedule {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+
+    &__item {
+      display: flex;
+    }
+    &__time {
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 20px;
+    }
+  }
+  &__main {
+    &__inform {
+      @include on-tablet {
+        display: flex;
+        width: 144px;
+      }
+    }
+  }
+}
+
+hr {
+  height: 1px;
+  background-color: $whigt-color;
+}
+
+.list {
+  display: flex;
+  gap: 28px;
+  &__items {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
   }
 }
