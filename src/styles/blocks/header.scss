@@ -4,10 +4,12 @@
   box-sizing: border-box;
   &__top {
     grid-column: span 2;
+
     @include on-tablet {
       grid-column: 4/-1;
       grid-row: 1/2;
     }
+
     @include on-desktop {
       grid-column: 6/-1;
     }
@@ -15,6 +17,7 @@
   &__content {
     grid-column: span 2;
     padding: 20px;
+
     @include on-tablet {
       grid-column: 1/4;
       grid-row: 1/2;
@@ -22,6 +25,7 @@
       flex-direction: column;
       justify-content: end;
     }
+
     @include on-desktop {
       grid-column: 1/6;
       display: flex;
@@ -37,6 +41,7 @@
     text-align: center;
     line-height: 100%;
     text-transform: uppercase;
+
     @include on-tablet {
       text-align: left;
       font-size: 54px;
@@ -56,11 +61,10 @@
     line-height: 16px;
     background-color: $whigt-color;
     position: relative;
+
     @include on-tablet {
       width: 270px;
       height: 70px;
-    }
-    @include on-desktop {
     }
   }
   &__inner-button {

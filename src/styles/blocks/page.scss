@@ -14,6 +14,7 @@ body {
   font-weight: 700;
   font-size: 36px;
   line-height: 100%;
+
   @include on-tablet {
     font-size: 48px;
   }

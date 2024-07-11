@@ -11,6 +11,7 @@
   color: $whigt-color;
   font-weight: 500;
   padding: 27px 24px 0;
+
   @include constent-padding-inline;
 
   &__top {

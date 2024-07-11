@@ -8,12 +8,9 @@
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    // @include on-tablet {
     position: absolute;
     top: 27px;
     left: 24px;
-    // z-index: 10;
-    // }
   }
   &--array {
     background-image: url(../images/logo/icon--array-whit.png);
