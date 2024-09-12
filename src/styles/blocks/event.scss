@@ -55,6 +55,7 @@
       width: 100%;
       grid-column: 1/-1;
       box-sizing: border-box;
+
       @include on-desktop {
         grid-column: 1/-1;
       }
@@ -85,7 +86,6 @@
 
       @include on-tablet {
         padding: 45px 55px;
-        // height: 204px;
         width: 570px;
       }
 
@@ -101,6 +101,7 @@
     margin-top: 16px;
     &__lecture {
       margin: 0 20px;
+
       @include on-tablet {
         margin: 0;
       }
@@ -125,12 +126,14 @@
   &__title {
     font-size: 28px;
     line-height: 100%;
+
     @include on-tablet {
       font-size: 36px;
     }
     &__lecture {
       text-align: center;
       margin-top: 20px;
+
       @include on-tablet {
         text-align: left;
       }

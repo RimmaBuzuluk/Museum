@@ -1,0 +1,16 @@
+.footerText {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 80px;
+  padding-bottom: 40px;
+  @include on-tablet {
+    padding-top: 120px;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  @include on-desktop {
+    padding-top: 84px;
+  }
+}
